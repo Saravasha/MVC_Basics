@@ -1,17 +1,38 @@
 ﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>@ViewBag.Title</title>
+    </head>
+    <body>
+        <div class="header_container">
+            <header id="index_header_sitename">
+                <h1>Sexiest ov the bords - Edgiest bird enthusiast homepage</h1>
+            </header>
+            <nav>
+                <ul id="navoptions">
+                    <li id="other_stuff">
+                        <a asp-controller="Home" asp-action="Index" >Index </a>
+                    </li>
+                    <li id="about">
+                        <a asp-controller="Home" asp-action="About" >About</a>
+                    </li>
+                    <li id="contact">
+                        <a asp-controller="Home" asp-action="Contact" >Contact </a>
+                    </li>
+                    <li id="projects">
+                        <a asp-controller="Home" asp-action="Projects">Projects </a>
+                    </li>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
-</head>
-<body>
-    <div>
+                </ul>
+            </nav>
+        </div>
+        
         @RenderBody()
     </div>
-<footer> @(DateTime.Now.Year)</footer>
+<footer><span>@(DateTime.Now.Year) - © Siavash Gosheh (This is a mockup, I am not claiming any ownership of the bird assets in the case of public use.)</span></footer>
 </body>
-
-
-
 </html>

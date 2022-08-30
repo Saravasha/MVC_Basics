@@ -1,0 +1,356 @@
+html {
+    max-width: 1024px;
+    margin: auto;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: 1px solid black;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.index_container {
+
+    background-color: rgb(238, 199, 91);
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto auto auto;
+    padding: 1% 1% 1% 1%;
+    
+}
+
+
+.header_container {
+    display: flex;    
+}
+
+#index_header_sitename {
+    flex-flow: column wrap;
+    background-color: red;
+    outline: 1px solid black;
+    overflow-wrap: normal;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-basis: 40%;
+    flex-grow: 1;
+    padding: 0;
+}
+
+#login_header_sitename {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: green;
+    outline: 1px solid black;
+    overflow-wrap: normal;
+    text-align: center;
+    justify-content: center;
+    flex-basis: 80%;
+    flex-grow: 1;
+    text-transform: uppercase;
+}
+
+nav {   
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(0, 240, 240);
+    text-align: center;
+    outline: 1px solid black;
+    justify-content: flex-start;
+    padding: 0;
+    flex-basis: 100%;
+}
+
+ul#navoptions {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-basis: 60%;
+    overflow-wrap: normal;
+    text-align: center;
+}
+    
+    a {
+        align-self: center;
+    }
+    
+    #other_stuff {     
+        display: flex;
+        background-color: tomato;
+        outline: 1px solid black;
+        flex-grow: 1;
+        flex-basis: 20%;
+        justify-content: center;  
+    }
+
+    #about {
+        display: flex;
+        background-color: tomato;
+        outline: 1px solid black;
+        flex-grow: 1;
+        justify-content: center;  
+        flex-basis: 20%;
+    }
+
+    #connect {
+        display: flex;
+        background-color: tomato;
+        outline: 1px solid black;
+        flex-grow: 1;
+        justify-content: center;
+        flex-basis: 20%;  
+    }
+
+
+    #navlogin {
+        display: flex;
+        background-color: gold;
+        outline: 1px solid black;
+        flex-basis: 30%;
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+
+/*Main content */ 
+
+
+
+main {
+    display: grid;
+}
+
+
+#index_headline > h2 {
+    display: grid;
+    text-align: center;
+    color: beige;
+}
+
+#index_headline > p {
+    color: blanchedalmond;
+    display: grid;
+    text-align: center;
+}
+
+#login_headline > h2 {
+    display: grid;
+    text-align: center;
+    color: beige;
+}
+
+#index_headline {    
+    display: grid; 
+    text-align: center;
+    align-items: center;
+    flex-flow: column wrap;
+    grid-area: 1 / 1 / span 1 /  span 1;
+    outline: 1px solid black;
+    overflow-wrap: normal;
+    background-color: hotpink;
+}
+
+
+#first_article {   
+    margin: .5rem .5rem 0 0;
+    display: grid;
+    text-align: center;
+    flex-flow: column wrap;
+    grid-area: 2 / 1 / span 5 /  span 6;
+    outline: 1px solid black;
+    background-color: chartreuse;
+    
+}
+
+#second_article {
+
+    margin: .5rem .5rem 0 0;
+    display: grid;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-flow: column wrap;
+    grid-area: 8 / 1 / span 1 /  span 1;
+    outline: 1px solid black;
+    overflow-wrap: normal;
+    background-color: mediumpurple;
+}
+
+#third_article { 
+    margin: .5rem .5rem 0 0;
+    display: grid;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-flow: column wrap;
+    grid-area: 8 / 2 / 1 span /  span 1;
+    outline: 1px solid black;
+    overflow-wrap: normal;
+    background-color: darkslategrey;
+}
+#third_article > p {
+
+    color: aliceblue;
+} 
+img#sexybord {
+    width: 60%;
+} 
+
+article h2 p {
+    color: rgb(0, 0, 0);
+}
+
+/* #sidebar */
+
+aside {
+    display: grid;
+    text-align: center;
+    grid-area: 1 / 4 / span 1 /  span 1;
+    outline: 1px solid black;
+}
+
+.sidebar {
+    display: grid;
+    text-align: center;
+    flex-flow: wrap;
+    outline: 1px solid black;
+    background-color: rgb(219, 5, 5);
+}
+
+.sidebar > ul {
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    flex-flow: column wrap;
+
+}
+
+.sidebar > ul > li {
+    display: flex;
+    flex-flow: column wrap;
+    color: rgb(255, 255, 255);  
+    margin-right: 5%;  
+}  
+ 
+.sidebar > ul > li > ol {
+    display: table;
+    text-align: center;
+
+}
+
+.sidebar > ul > li > ol > li {
+    display: list-item;
+    flex-flow: column wrap;
+    text-align: left;
+
+}
+
+.sidebar > h3 {
+
+    text-align: center;
+    color: rgb(152, 238, 130);
+
+}
+
+/* Footer */ 
+footer {
+    display: grid;
+    background-color: lightgreen;
+    outline: 1px solid black;
+}
+
+
+h4 {
+    color: rgb(255, 255, 255);
+}
+
+li > p {
+    color: rgb(255, 255, 255);
+
+}
+
+/* login.html styles */
+
+label {
+    text-align: center;
+    margin: auto;
+}
+
+input {
+    text-align: center;
+    margin: auto;
+} 
+
+
+form {
+    text-align: right;
+    margin: auto;    
+}
+
+
+.login_container {
+    background-color: rgb(78, 2, 97);
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    grid-template-rows: 1fr 3fr auto ;
+    max-height: 80vh;    
+}
+
+
+#login_main  {
+    display: grid;
+    margin: 10% auto auto auto;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#login_headline {
+    display: flex;
+
+}
+
+#login_headline > h2 {    
+    padding: 3%;
+    width: 30%;
+    flex-flow: column wrap;
+    outline: 1px solid black;
+    overflow-wrap: normal;
+    background-color: hotpink;
+    
+}
+
+#login_form {   
+    justify-content: center;
+    display: flex;
+    margin: auto auto auto auto;
+    flex-flow: column wrap;
+    outline: 1px solid black;
+    padding: 8em;
+    height: 10rem;
+    overflow-wrap: normal;
+    background-color: chartreuse;
+    border-radius: 5px;
+    
+}
+
+
+#login_footer > p {
+    display: inline;
+    text-align: center;
+}
+
+#login_footer {
+
+    background-color: rgb(0, 126, 0);
+    outline: 1px solid black;
+}
+
+#login_form > form > #reset {
+    background-color: red;
+    border-radius: 15px;
+}
+
+#login_form > form > #submit {
+    background-color: rgb(25, 255, 0);
+    border-radius: 15px;
+}

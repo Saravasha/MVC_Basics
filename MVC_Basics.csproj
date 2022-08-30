@@ -1,0 +1,110 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Front_End_Assignment_2\.git\objects\info\" />
+    <Folder Include="Front_End_Assignment_2\.git\objects\pack\" />
+    <Folder Include="Front_End_Assignment_2\.git\refs\tags\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Front_End_Assignment_2\.git\COMMIT_EDITMSG" />
+    <None Include="Front_End_Assignment_2\.git\config" />
+    <None Include="Front_End_Assignment_2\.git\description" />
+    <None Include="Front_End_Assignment_2\.git\FETCH_HEAD" />
+    <None Include="Front_End_Assignment_2\.git\HEAD" />
+    <None Include="Front_End_Assignment_2\.git\hooks\applypatch-msg.sample" />
+    <None Include="Front_End_Assignment_2\.git\hooks\commit-msg.sample" />
+    <None Include="Front_End_Assignment_2\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="Front_End_Assignment_2\.git\hooks\post-update.sample" />
+    <None Include="Front_End_Assignment_2\.git\hooks\pre-applypatch.sample" />
+    <None Include="Front_End_Assignment_2\.git\hooks\pre-commit.sample" />
+    <None Include="Front_End_Assignment_2\.git\hooks\pre-merge-commit.sample" />
+    <None Include="Front_End_Assignment_2\.git\hooks\pre-push.sample" />
+    <None Include="Front_End_Assignment_2\.git\hooks\pre-rebase.sample" />
+    <None Include="Front_End_Assignment_2\.git\hooks\pre-receive.sample" />
+    <None Include="Front_End_Assignment_2\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="Front_End_Assignment_2\.git\hooks\push-to-checkout.sample" />
+    <None Include="Front_End_Assignment_2\.git\hooks\update.sample" />
+    <None Include="Front_End_Assignment_2\.git\index" />
+    <None Include="Front_End_Assignment_2\.git\info\exclude" />
+    <None Include="Front_End_Assignment_2\.git\logs\HEAD" />
+    <None Include="Front_End_Assignment_2\.git\logs\refs\heads\main" />
+    <None Include="Front_End_Assignment_2\.git\logs\refs\remotes\origin\main" />
+    <None Include="Front_End_Assignment_2\.git\objects\02\1ec11f757b50aff968364d4a0a60b3d16cd9b5" />
+    <None Include="Front_End_Assignment_2\.git\objects\03\1a2dfc7d09cd9d139d30725f2ef687a0dbbd50" />
+    <None Include="Front_End_Assignment_2\.git\objects\04\e46c634d8d92c5af4dad4965b9bcd0c312b222" />
+    <None Include="Front_End_Assignment_2\.git\objects\09\80a2b311c866361953d6b40969d774a702b318" />
+    <None Include="Front_End_Assignment_2\.git\objects\09\c8b8657ae9459698b7a22b9dd9bd75beb979de" />
+    <None Include="Front_End_Assignment_2\.git\objects\0b\bb710b5cd92e8fbaf5b5480eda6003eb37324c" />
+    <None Include="Front_End_Assignment_2\.git\objects\0d\95a0a8879ac6df55a2ac819b7ec54ea82e2372" />
+    <None Include="Front_End_Assignment_2\.git\objects\0f\5aadf37149455bc5d52ead0f673c3c0f152cbd" />
+    <None Include="Front_End_Assignment_2\.git\objects\12\82323715242246a7f1c871b4d062ed00045792" />
+    <None Include="Front_End_Assignment_2\.git\objects\1a\1f41ef4d67c0505e2c55575e1e048d6ad7e5b1" />
+    <None Include="Front_End_Assignment_2\.git\objects\1c\f22d8b3b75f86d540061a1b6c621cca5f8a20a" />
+    <None Include="Front_End_Assignment_2\.git\objects\1d\5bad7a2f7fbd783c31d37dfff710c6f7ef2161" />
+    <None Include="Front_End_Assignment_2\.git\objects\1f\b88cdb9cb4b013cef4deafb14d4f0e6b347e53" />
+    <None Include="Front_End_Assignment_2\.git\objects\21\c85ff1b13aca6a3227f22ed8a6465050f2fb50" />
+    <None Include="Front_End_Assignment_2\.git\objects\30\58da06dbd35e096f0a5e23bd494469541e6bea" />
+    <None Include="Front_End_Assignment_2\.git\objects\32\153c13bdcb19ba0f81f434b5a34293b2de66ef" />
+    <None Include="Front_End_Assignment_2\.git\objects\33\ac6eac1bed55226f8b547737951a7aafead47d" />
+    <None Include="Front_End_Assignment_2\.git\objects\35\429369128ff21929940b5e18a8332f9bd71871" />
+    <None Include="Front_End_Assignment_2\.git\objects\46\60f3842c39e6a518ed46cad001db6b1b61358e" />
+    <None Include="Front_End_Assignment_2\.git\objects\4a\5a7ac33149a797f9a1a9cfb8dcb63cba4df147" />
+    <None Include="Front_End_Assignment_2\.git\objects\4e\d44d51d1da71739e03d4af535bfb88e37fa47f" />
+    <None Include="Front_End_Assignment_2\.git\objects\53\8fe3bd3ffed97a784ee4868858329e0c1920e3" />
+    <None Include="Front_End_Assignment_2\.git\objects\56\41f6a0a98a2365d39de7e04c5666423095a150" />
+    <None Include="Front_End_Assignment_2\.git\objects\57\bcc1ae625f9a70086f2a7476d0061c66376385" />
+    <None Include="Front_End_Assignment_2\.git\objects\62\fa9523a5a06c4f74b6364d621f0feba1d4691f" />
+    <None Include="Front_End_Assignment_2\.git\objects\67\b7d8ad5a4dbdc666482d0add0a3a54fab8087b" />
+    <None Include="Front_End_Assignment_2\.git\objects\6c\c8625b31e9a4d5e2250517d1d7e3b7f177baec" />
+    <None Include="Front_End_Assignment_2\.git\objects\6d\0dc9127c658b3bb44ca00aacecae415c5cde54" />
+    <None Include="Front_End_Assignment_2\.git\objects\6e\7674499fb10a1187c226bd1c02e61c126bb8f4" />
+    <None Include="Front_End_Assignment_2\.git\objects\73\05e16c22489ed66651aa23352ac9ed66125089" />
+    <None Include="Front_End_Assignment_2\.git\objects\78\988386ee6ed0f54a209c45641c10a1eda1eccf" />
+    <None Include="Front_End_Assignment_2\.git\objects\84\076f7168960f26b091c651047cb7dd47837f89" />
+    <None Include="Front_End_Assignment_2\.git\objects\85\63e4f6c1acbb4c27ab9317040e617ebfd7e810" />
+    <None Include="Front_End_Assignment_2\.git\objects\86\e3babe5603b19d0f2d0b74225b0b8124a30dff" />
+    <None Include="Front_End_Assignment_2\.git\objects\88\ae2ce209b33994852c1532e95d11892faced46" />
+    <None Include="Front_End_Assignment_2\.git\objects\8b\6958dd629e6454c355a734db2dc5bb38c6c72d" />
+    <None Include="Front_End_Assignment_2\.git\objects\93\992f980dcec5d104a28632bf7ec3d36160a4af" />
+    <None Include="Front_End_Assignment_2\.git\objects\94\75df29a18c6900d38acc82fb0a89b0fa93fdee" />
+    <None Include="Front_End_Assignment_2\.git\objects\9c\d6d8f16fbc153638cef1ba984a2eab27a1dfc4" />
+    <None Include="Front_End_Assignment_2\.git\objects\a4\c171011258f79b407a9446a42aef3b228d0160" />
+    <None Include="Front_End_Assignment_2\.git\objects\af\76d9847f2c104088239f6b9610398b4ee9734c" />
+    <None Include="Front_End_Assignment_2\.git\objects\b1\8a98468b097bc638963ffa5ead2aea5fd08104" />
+    <None Include="Front_End_Assignment_2\.git\objects\bc\8b1c21ff3248c58c6f7d43788f2f50156348bd" />
+    <None Include="Front_End_Assignment_2\.git\objects\c1\36b7fe62061655077b44c1dda2381b614c19d5" />
+    <None Include="Front_End_Assignment_2\.git\objects\c2\8d7a98a25f4bc2fca7ba2873733ca1fd1d3d51" />
+    <None Include="Front_End_Assignment_2\.git\objects\c3\a72289320d9d8ea582da1c8398585e77504600" />
+    <None Include="Front_End_Assignment_2\.git\objects\c4\0a6943006ddf420eb4672e266da6dfea43532a" />
+    <None Include="Front_End_Assignment_2\.git\objects\c6\d9c5428bc842c2a76d8612ce36c68c14a28e54" />
+    <None Include="Front_End_Assignment_2\.git\objects\db\6f5e6d67ee52e2962056e5a714b7df439c839c" />
+    <None Include="Front_End_Assignment_2\.git\objects\dd\55a47536bfa970a78030db054682a961f6be11" />
+    <None Include="Front_End_Assignment_2\.git\objects\df\e0770424b2a19faf507a501ebfc23be8f54e7b" />
+    <None Include="Front_End_Assignment_2\.git\objects\e1\b085c81f5335daccfc4cc66973cd8e626684f7" />
+    <None Include="Front_End_Assignment_2\.git\objects\e6\9de29bb2d1d6434b8b29ae775ad8c2e48c5391" />
+    <None Include="Front_End_Assignment_2\.git\objects\e8\7defe586acac8d466331bc25f3b1126a3e3a3e" />
+    <None Include="Front_End_Assignment_2\.git\objects\e9\47fa03cd59e2539ed29a4c438d68fe49d6b2d2" />
+    <None Include="Front_End_Assignment_2\.git\objects\eb\2225533358f85532682fa4ca277dd7784464af" />
+    <None Include="Front_End_Assignment_2\.git\objects\ec\5dd9ca3aa96b6e57b9d454b0827884d1f42757" />
+    <None Include="Front_End_Assignment_2\.git\objects\f6\26352f39806a206ef5447e36d683ab947d6efd" />
+    <None Include="Front_End_Assignment_2\.git\objects\f6\4a0b54905017352941d5aede913c6583cc01c5" />
+    <None Include="Front_End_Assignment_2\.git\objects\fe\6f10102ff571a499c11823ae1aabe0706c8806" />
+    <None Include="Front_End_Assignment_2\.git\objects\fe\9ef70eb36f91fa06e9d85a75b9146f94e222ca" />
+    <None Include="Front_End_Assignment_2\.git\refs\heads\main" />
+    <None Include="Front_End_Assignment_2\.git\refs\remotes\origin\main" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.8" />
+  </ItemGroup>
+
+</Project>
