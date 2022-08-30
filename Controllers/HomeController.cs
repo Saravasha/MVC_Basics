@@ -8,7 +8,18 @@ namespace CodeAlong.Controllers
         {
             return View();
         }
-        public IActionResult Test()
+
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
+        public IActionResult Projects()
         {
             return View();
         }
