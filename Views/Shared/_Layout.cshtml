@@ -6,6 +6,19 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
+    <header id="index_header_sitename">
+        
+        <nav>
+            <ul id="navoptions">
+                <li id="index">
+                    <a asp-controller="Home" asp-action="Index">Index</a>
+                </li>
+                <li id="about">
+                    <a asp-controller="Home" asp-action="Doctor">Doctor</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <div>
         @RenderBody()
     </div>

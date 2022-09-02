@@ -8,7 +8,7 @@ namespace CodeAlong.Controllers
         {
             return View();
         }
-        public IActionResult Test()
+        public IActionResult Doctor()
         {
             return View();
         }
