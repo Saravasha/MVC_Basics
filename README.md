@@ -1,4 +1,4 @@
-#MVC Basics Assignment 1 
+#MVC_Basics_Assignment1 
 
 MVC Basics, Views & Controllers ASP.NET
 
