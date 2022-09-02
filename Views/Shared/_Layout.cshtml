@@ -10,30 +10,30 @@
 
     <header id="index_header_sitename">
         <h1>Sexiest ov the bords - Edgiest bird enthusiast homepage</h1>
+        <nav>
+            <ul id="navoptions">
+                <li id="index">
+                    <a asp-controller="Home" asp-action="Index">Index</a>
+                </li>
+                <li id="about">
+                    <a asp-controller="Home" asp-action="About">About</a>
+                </li>
+                <li id="contact">
+                    <a asp-controller="Home" asp-action="Contact">Contact</a>
+                </li>
+                <li id="projects">
+                    <a asp-controller="Home" asp-action="Projects">Projects</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul id="navoptions">
-            <li id="index">
-                <a asp-controller="Home" asp-action="Index">Index</a>
-            </li>
-            <li id="about">
-                <a asp-controller="Home" asp-action="About">About</a>
-            </li>
-            <li id="contact">
-                <a asp-controller="Home" asp-action="Contact">Contact</a>
-            </li>
-            <li id="projects">
-                <a asp-controller="Home" asp-action="Projects">Projects</a>
-            </li>
-        </ul>
-    </nav>
     <div>
         @RenderBody()
     </div>
 
     <footer class="footer">
         <span>
-            @(DateTime.Now.Year) - © Siavash Gosheh
+            @(DateTime.Today.ToString("D")) - © Siavash Gosheh
         </span>
     </footer>
 </body>
