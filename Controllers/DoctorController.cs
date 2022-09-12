@@ -5,18 +5,25 @@ namespace MVC_Basics.Controllers
 {
     public class DoctorController : Controller
     {
-        [HttpGet]
-        public IActionResult PostTemp(double Temp)
+        //[HttpGet]
+
+        public IActionResult FeverCheck()
         {
-            var userTemp = new FeverCheck(); 
+            return View();
+        }
+
+        public IActionResult TakeTemp(TempModel model)
+        {
+            var userTemp = new TempModel();
             return View(userTemp);
         }
 
-        [HttpPost]
-        public IActionResult ReturnedTemp(FeverCheck userTemp)
-        {
-            return View();
 
-        }
+        //[HttpPost]
+        //public IActionResult Temp(TempModel userTemp)
+        //{
+        //    return View();
+
+        //}
     }
 }

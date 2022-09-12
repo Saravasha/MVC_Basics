@@ -9,12 +9,14 @@ app.UseRouting();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}",
+    defaults: new { controller = "Home", action = "Index" });
 
 app.MapControllerRoute(
     name: "fevercheck",
-    pattern: "/FeverCheck",
-    defaults: new { controller = "Doctor", action = "Doctor" });
+    pattern: "FeverCheck", 
+    defaults: new {controller = "Doctor", action = "FeverCheck"});
+
 
 if (app.Environment.IsDevelopment())
 {

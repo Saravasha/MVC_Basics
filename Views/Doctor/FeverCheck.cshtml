@@ -1,0 +1,21 @@
+﻿@using MVC_Basics.Models
+
+@model TempModel
+
+@{
+    ViewData["Title"] = "Doctor";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+
+@using (Html.BeginForm("FeverCheck", "Doctor", FormMethod.Post))
+{
+//    @Html.TextBoxFor(m => m.Temperature)
+    @Html.HiddenFor(m => m.Temperature)
+        <label for="temperature">Your temperature in °C:</label>
+        <input type="number" step="any">
+        <input type="reset" value="Reset" id="reset">
+        <input type="submit" value="Temperature">
+}
