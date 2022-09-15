@@ -9,13 +9,13 @@
 <h1>@ViewData["Title"]</h1>
 
 
-
-@using (Html.BeginForm("FeverCheck", "Doctor", FormMethod.Post))
+@using (Html.BeginForm("SendTemp", "Doctor", FormMethod.Post))
 {
-//    @Html.TextBoxFor(m => m.Temperature)
-    @Html.HiddenFor(m => m.Temperature)
-        <label for="temperature">Your temperature in °C:</label>
-        <input type="number" step="any">
-        <input type="reset" value="Reset" id="reset">
-        <input type="submit" value="Temperature">
+//<form asp-action="SendTemp" method="post">
+    <span>Your temperature in °C: </span>
+    <input asp-for="Temperature" type="number" step="any" required/>
+      <input id= "Submit" type="submit" value="Submit">
+    <input   id="reset"     type="reset"  value="Reset">
+//</form>
 }
+
