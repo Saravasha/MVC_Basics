@@ -1,6 +1,6 @@
 ﻿@using MVC_Basics.Models
 
-@model TempModel
+
 
 @{
     ViewData["Title"] = "Doctor";
@@ -9,13 +9,12 @@
 <h1>@ViewData["Title"]</h1>
 
 
-@using (Html.BeginForm("SendTemp", "Doctor", FormMethod.Post))
-{
-//<form asp-action="SendTemp" method="post">
+
+<form asp-action="SendTemp" method="post">
     <span>Your temperature in °C: </span>
-    <input asp-for="Temperature" type="number" step="any" required/>
+    <input name="temp" type="number" step="any" required/>
       <input id= "Submit" type="submit" value="Submit">
     <input   id="reset"     type="reset"  value="Reset">
-//</form>
-}
+</form>
 
+<div><p>@ViewBag.Message</p></div>

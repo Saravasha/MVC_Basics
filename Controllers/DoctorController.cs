@@ -12,16 +12,11 @@ namespace MVC_Basics.Controllers
         }
         
         [HttpPost]
-        public IActionResult SendTemp() 
-        { 
-            TempModel userTemp = new TempModel();
-            return View(userTemp);
-        }
-
-        [HttpGet]
-        public IActionResult YourTemp(string Message, double Temperature)
+        public IActionResult SendTemp(double temp) 
         {
-            return View();
+            ViewBag.Message = TempModel.CheckTemp(temp);
+          
+            return View("FeverCheck");
         }
     }
 }
