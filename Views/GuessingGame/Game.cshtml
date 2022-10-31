@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Guessing Game";
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/Doctor.css" />
+
+<link rel="stylesheet" href="~/css/Main.css" asp-append-version="true" />
+<div class="text-sm-left">
+    <h1 class="text-sm-left">Enter your guess between 1 and 100 </h1>
+
+
+
+
+    @using (@Html.BeginForm("Game", "GuessingGame"))
+    {
+        <input type="text" class="form-control inputtext name="playerGuess" value=@ViewBag.PlayerGuess placeholder="Enter your Guess" style="width:auto">
+        <input class="btn btn-primary" id="submit" type="submit" value="Guess!">
+    }
+    <h3>
+        @ViewBag.Message
+    </h3>
+    <h3>
+        @ViewBag.Best
+    </h3>
+</div>
+
