@@ -1,19 +1,11 @@
 ﻿@using MVC_Basics.Models
-
-
-
 @{
     ViewData["Title"] = "Doctor";
 }
-
 <h1>@ViewData["Title"]</h1>
-
-
-
 <form asp-action="SendTemp" method="post">
     <span>Your temperature in °C: </span>
     <input name="temp" type="number" step="any" required/>
-
     <button class="btn btn-secondary" id="reset" type="reset" value="Reset">Reset</button>
     <button class ="btn btn-primary" id="Submit" type="submit" value="Submit">Submit</button>
 </form>

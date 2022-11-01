@@ -5,36 +5,32 @@ namespace MVC_Basics.Controllers
 {
     public class GuessingGameController : Controller
     {
-        private CookieOptions options;
-
+        private CookieOptions? options;
+        
         public IActionResult Game()
         {
-            BestPlayerLOad();
-            if (String.IsNullOrEmpty(HttpContext.Session.GetString("Nummer")))
+            loadHighscore();
+            if (String.IsNullOrEmpty(HttpContext.Session.GetString("Number")))
             {
-                GuessingGame.GuessNummer = GuessingGame.GenerateNumber();
-                HttpContext.Session.SetString("Nummer", GuessingGame.GuessNummer.ToString());
-
+                GuessingGame.GuessNumber = GuessingGame.GenerateNumber();
+                HttpContext.Session.SetString("Number", GuessingGame.GuessNumber.ToString());
             }
             else
             {
-                GuessingGame.GuessNummer = int.Parse(HttpContext.Session.GetString("Nummer"));
+                GuessingGame.GuessNumber = int.Parse(HttpContext.Session.GetString("Number"));
             }
 
             return View();
         }
 
-        private void BestPlayerLOad()
+        private void loadHighscore()
         {
-
-            if (!String.IsNullOrEmpty(HttpContext.Request.Cookies["BestPlay"]))
+            if (!String.IsNullOrEmpty(HttpContext.Request.Cookies["Highscore"]))
             {
-
-                ViewBag.Best = "The best record:" + HttpContext.Request.Cookies["BestPlay"];
-
+                ViewBag.Highscore = $"Highscore (number of guesses before win): {HttpContext.Request.Cookies["Highscore"]}" ;
             }
             else
-                ViewBag.Best = "";
+                ViewBag.Highscore = "";
         }
 
         [HttpPost]
@@ -45,32 +41,36 @@ namespace MVC_Basics.Controllers
             ViewBag.Message = GuessingGame.Game(playerGuess);
             if (GuessingGame.GameOver)
             {
-                PlayAdd(GuessingGame.Count);
-                GuessingGame.Count = 0;
-                GuessingGame.GuessNummer = GuessingGame.GenerateNumber();
-                HttpContext.Session.SetString("Nummer", GuessingGame.GuessNummer.ToString());
+                AddCount(GuessingGame.SetCount);
+                GuessingGame.SetCount = 0;
+                GuessingGame.GuessNumber = GuessingGame.GenerateNumber();
+                HttpContext.Session.SetString("Number", GuessingGame.GuessNumber.ToString());
             }
             else
             {
-                GuessingGame.Count++;
-                ViewBag.Message = ViewBag.Message + " Number of attempts: " + GuessingGame.Count;
+                GuessingGame.SetCount++;
+                ViewBag.numAttempts = $"Number of attempts: { GuessingGame.SetCount}";
             }
-            BestPlayerLOad();
+            loadHighscore();
             return View();
         }
 
-        private void PlayAdd(int count)
+        private void AddCount(int count)
         {
 
             options = new CookieOptions();
             options.Expires = DateTime.Now.AddDays(1);
-            if (!String.IsNullOrEmpty(HttpContext.Request.Cookies["BestPlay"]))
+            if (!String.IsNullOrEmpty(HttpContext.Request.Cookies["Highscore"]))
             {
-                if (int.Parse(HttpContext.Request.Cookies["BestPlay"]) > count)
-                    HttpContext.Response.Cookies.Append("BestPlay", count.ToString(), options);
+                if (int.Parse(HttpContext.Request.Cookies["Highscore"]) > count)
+                {
+                    HttpContext.Response.Cookies.Append("Highscore", count.ToString(), options);
+                }
             }
             else
-                HttpContext.Response.Cookies.Append("BestPlay", count.ToString(), options);
+            {
+                HttpContext.Response.Cookies.Append("Highscore", count.ToString(), options);
+            }
         }
     }
 }

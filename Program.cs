@@ -7,7 +7,7 @@ builder.Services.AddMvc();
 
 builder.Services.AddSession(options =>
 {
-    options.Cookie.Name = ".AdventureWorks.Session";
+    options.Cookie.Name = ".ZigiPlz";
     options.IdleTimeout = TimeSpan.FromMinutes(10);
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
@@ -20,18 +20,16 @@ app.UseHttpsRedirection();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}",
-    defaults: new { controller = "Home", action = "Index" });
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
     name: "fevercheck",
-    pattern: "FeverCheck", 
-    defaults: new {controller = "Doctor", action = "FeverCheck"});
+    pattern: "{controller=Doctor}/{action=FeverCheck}/{id?}");
 
 app.MapControllerRoute(
     name: "guessingame",
-    pattern: "GuessingGame",
-    defaults: new { controller = "GuessingGame", action = "Game" });
+    pattern: "{controller=GuessingGame}/{action=Game}/{id?}");
+
 
 if (app.Environment.IsDevelopment())
 {

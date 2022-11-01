@@ -2,32 +2,31 @@
 {
     public class GuessingGame
     {
-        public static int GuessNummer;
+        public static int GuessNumber;
         public static bool GameOver { get; internal set; }
-        public static int Count { get; internal set; }
-        public static string Message { get; private set; }
+        public static int SetCount { get; internal set; }
+        public static string? Message { get; private set; }
 
         internal static int GenerateNumber()
         {
             GameOver = false;
-            Count = 0;
+            SetCount = 0;
             Random random = new Random();
-            return random.Next(1, 100);
+            return random.Next(0, 101);
         }
 
         internal static string Game(string playerGuess)
         {
-            int ifcase = 0;
             try
             {
-                ifcase = int.Parse(playerGuess);
-                if (ifcase < GuessNummer)
-                    Message = "Your guess was too small, enter a bigger number";
-                else if (ifcase > GuessNummer)
-                    Message = "Your guess was too big, enter a smaller number";
+
+                if (int.Parse(playerGuess) < GuessNumber)
+                    Message = "Too small, try a larger number!";
+                else if (int.Parse(playerGuess) > GuessNumber)
+                    Message = "Too large, try a smaller number!";
                 else
                 {
-                    Message = "Well done. Your guess was right. The game started again!!";
+                    Message = $"{GuessingGame.GuessNumber} is correct! It took you {GuessingGame.SetCount} number of guesses! Good job! :D\nReloading! :)";
                     GameOver = true;
                 }
             }
